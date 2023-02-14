@@ -44,6 +44,6 @@ def mask_and_display(img, mask):
     plt.show()
 if __name__ == '__main__':
     path = 'data/images/segment-1231623110026745648_480_000_500_000_with_camera_labels_38.png'
-    color_threshold = [128, 128, 128]
+    color_threshold = [100, 100, 128]
     img, mask = create_mask(path, color_threshold)
     mask_and_display(img, mask)
